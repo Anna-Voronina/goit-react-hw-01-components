@@ -1,17 +1,43 @@
 .profile {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+  gap: 12px;
 }
 
 .avatar {
+  object-fit: cover;
+  width: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black-color);
 }
 
 .tag {
+  color: var(--grey-color);
 }
 
 .location {
+  font-size: 16px;
+  color: var(--grey-color);
 }

@@ -5,7 +5,7 @@ export const ProfileStats = ({ stats }) => {
     <ul className={css.stats}>
       {Object.entries(stats).map(([key, value]) => {
         return (
-          <li key={key}>
+          <li key={key} className={css.statsItem}>
             <span className={css.label}>{key}</span>
             <span className={css.quantity}>{value}</span>
           </li>
